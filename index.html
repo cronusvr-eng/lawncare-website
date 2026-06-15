@@ -1,23 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Ryder Lawn Care</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ryder Lawn Care</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f8f4;
+    color:#333;
+}
+
+header{
+    background:#1f6b2d;
+    color:white;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-icon{
+    font-size:40px;
+}
+
+.logo-text{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+    url('https://images.unsplash.com/photo-1598902108854-10e335adac99?w=1600');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    font-size:22px;
+    margin-top:15px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#39b54a;
+    color:white;
+    padding:15px 30px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:30px;
+    color:#1f6b2d;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#1f6b2d;
+    margin-bottom:10px;
+}
+
+.pricing{
+    background:#1f6b2d;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.contact{
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
 </head>
+
 <body>
-    <h1>Ryder Lawn Care</h1>
 
-    <h2>Services</h2>
-    <ul>
-        <li>Lawn Mowing</li>
-        <li>Weed Removal</li>
-        <li>Leaf Cleanup</li>
-        <li>Yard Maintenance</li>
-    </ul>
+<header>
+<div class="logo">
+<div class="logo-icon">🌿</div>
+<div class="logo-text">Ryder Lawn Care</div>
+</div>
+</header>
 
-    <h2>Contact</h2>
-    <p>Call or Text: (Your Phone Number)</p>
+<section class="hero">
+<h1>Professional Lawn Care Services</h1>
+<p>Affordable • Reliable • Local</p>
+<a href="#contact" class="btn">Get A Free Quote</a>
+</section>
 
-    <h2>Prices</h2>
-    <p>Starting at $25 per yard</p>
+<section class="container">
+<h2 class="section-title">Our Services</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>🌱 Lawn Mowing</h3>
+<p>Clean and professional mowing for all yard sizes.</p>
+</div>
+
+<div class="card">
+<h3>🍂 Leaf Cleanup</h3>
+<p>Seasonal cleanup to keep your property looking great.</p>
+</div>
+
+<div class="card">
+<h3>🌿 Weed Removal</h3>
+<p>Remove unwanted weeds and improve curb appeal.</p>
+</div>
+
+<div class="card">
+<h3>🏡 Yard Maintenance</h3>
+<p>Routine maintenance and landscaping assistance.</p>
+</div>
+
+</div>
+</section>
+
+<section class="pricing">
+<h2>Starting at $25 Per Yard</h2>
+<p>Contact us for a custom quote.</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>📞 1 4406949512/p>
+<p>📧 cronusvr@gmail.com</p>
+</section>
+
+<footer>
+© 2026 Ryder Lawn Care. All Rights Reserved.
+</footer>
+
 </body>
 </html>
